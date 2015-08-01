@@ -18,16 +18,39 @@ set(TOON_INCLUDE_DIR /usr/include/TooN/)
 set(CVD_INCLUDE_DIR /usr/include/cvd/)
 
 include_directories(
-    "Src/"
+    Src/
     ${OPENGL_INCLUDE_DIRS}
     ${TOON_INCLUDE_DIR}
     ${CVD_INCLUDE_DIR}
 )
 
 add_executable(ptam
-    "Src/main.cc"
+    Src/ARDriver.cc
+    Src/ATANCamera.cc
+    Src/Bundle.cc
+    Src/CalibCornerPatch.cc
+    #Src/CalibImage.cc
+    #Src/CameraCalibrator.cc
+    Src/EyeGame.cc
+    Src/GLWindow2.cc
+    Src/GLWindowMenu.cc
+    Src/HomographyInit.cc
+    Src/KeyFrame.cc
+    Src/main.cc
+    Src/Map.cc
+    Src/MapMaker.cc
+    Src/MapPoint.cc
+    Src/MapViewer.cc
+    Src/MiniPatch.cc
+    Src/PatchFinder.cc
+    Src/Relocaliser.cc
+    Src/ShiTomasi.cc
+    Src/SmallBlurryImage.cc
+    Src/System.cc
+    Src/Tracker.cc
+    Src/VideoSource.cc
     )
 
-set(LIBS ${CVD_LIBRARY} ${OPENGL_LIBRARIES} ${GVARS3_LIBRARY})
+set(LIBS ${OPENGL_LIBRARIES} ${CVD_LIBRARY} ${GVARS3_LIBRARY})
 
 target_link_libraries(ptam ${LIBS})
