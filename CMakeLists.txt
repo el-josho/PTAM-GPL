@@ -13,6 +13,8 @@ find_library(GVARS3_LIBRARY
     NAMES libGVars3.so
     )
 
+find_package(LAPACK)
+
 # TODO automatically locate include directories
 set(TOON_INCLUDE_DIR /usr/include/TooN/)
 set(CVD_INCLUDE_DIR /usr/include/cvd/)
@@ -51,6 +53,11 @@ add_executable(ptam
     Src/VideoSource.cc
     )
 
-set(LIBS ${OPENGL_LIBRARIES} ${CVD_LIBRARY} ${GVARS3_LIBRARY})
+set(LIBS
+    ${OPENGL_LIBRARIES}
+    ${CVD_LIBRARY}
+    ${GVARS3_LIBRARY}
+    ${LAPACK_LIBRARIES}
+    )
 
 target_link_libraries(ptam ${LIBS})
