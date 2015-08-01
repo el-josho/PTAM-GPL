@@ -26,19 +26,17 @@ include_directories(
     ${CVD_INCLUDE_DIR}
 )
 
-add_executable(ptam
+set(SOURCES
     Src/ARDriver.cc
     Src/ATANCamera.cc
     Src/Bundle.cc
     Src/CalibCornerPatch.cc
-    #Src/CalibImage.cc
-    #Src/CameraCalibrator.cc
+    Src/CalibImage.cc
     Src/EyeGame.cc
     Src/GLWindow2.cc
     Src/GLWindowMenu.cc
     Src/HomographyInit.cc
     Src/KeyFrame.cc
-    Src/main.cc
     Src/Map.cc
     Src/MapMaker.cc
     Src/MapPoint.cc
@@ -60,4 +58,16 @@ set(LIBS
     ${LAPACK_LIBRARIES}
     )
 
-target_link_libraries(ptam ${LIBS})
+add_executable(CameraCalibrator
+    Src/CameraCalibrator.cc
+    ${SOURCES}
+    )
+
+target_link_libraries(CameraCalibrator ${LIBS})
+
+add_executable(PTAM
+    Src/main.cc
+    ${SOURCES}
+    )
+
+target_link_libraries(PTAM ${LIBS})
