@@ -9,6 +9,10 @@ find_library(CVD_LIBRARY
     NAMES libcvd.so
     )
 
+find_library(GVARS3_LIBRARY
+    NAMES libGVars3.so
+    )
+
 # TODO automatically locate include directories
 set(TOON_INCLUDE_DIR /usr/include/TooN/)
 set(CVD_INCLUDE_DIR /usr/include/cvd/)
@@ -24,6 +28,6 @@ add_executable(ptam
     "Src/main.cc"
     )
 
-set(LIBS ${CVD_LIBRARY} ${OPENGL_LIBRARIES})
+set(LIBS ${CVD_LIBRARY} ${OPENGL_LIBRARIES} ${GVARS3_LIBRARY})
 
 target_link_libraries(ptam ${LIBS})
