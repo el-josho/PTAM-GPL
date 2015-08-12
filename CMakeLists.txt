@@ -18,12 +18,10 @@ include_directories(
     ${TOON_INCLUDE_DIRS}
     )
 
-set(SOURCES
+set(PTAM_SOURCES
     Src/ARDriver.cc
     Src/ATANCamera.cc
     Src/Bundle.cc
-    Src/CalibCornerPatch.cc
-    Src/CalibImage.cc
     Src/EyeGame.cc
     Src/GLWindow2.cc
     Src/GLWindowMenu.cc
@@ -43,6 +41,15 @@ set(SOURCES
     Src/VideoSource.cc
     )
 
+set(CALIB_SOURCES
+    Src/ATANCamera.cc
+    Src/CalibCornerPatch.cc
+    Src/CalibImage.cc
+    Src/GLWindow2.cc
+    Src/GLWindowMenu.cc
+    Src/VideoSource.cc
+    )
+
 set(LIBS
     ${GVARS3_LIBRARIES}
     ${OPENGL_LIBRARIES}
@@ -53,14 +60,14 @@ set(LIBS
 
 add_executable(CameraCalibrator
     Src/CameraCalibrator.cc
-    ${SOURCES}
+    ${CALIB_SOURCES}
     )
 
 target_link_libraries(CameraCalibrator ${LIBS})
 
 add_executable(PTAM
     Src/main.cc
-    ${SOURCES}
+    ${PTAM_SOURCES}
     )
 
 target_link_libraries(PTAM ${LIBS})
