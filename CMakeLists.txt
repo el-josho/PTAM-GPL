@@ -11,7 +11,7 @@ find_package(TooN REQUIRED)
 find_package(OpenCV REQUIRED)
 
 include_directories(
-    src/
+    include/
     ${GVARS3_INCLUDE_DIRS}
     ${OPENGL_INCLUDE_DIRS}
     ${CVD_INCLUDE_DIRS}
