@@ -11,7 +11,7 @@ find_package(TooN REQUIRED)
 find_package(OpenCV REQUIRED)
 
 include_directories(
-    Src/
+    src/
     ${GVARS3_INCLUDE_DIRS}
     ${OPENGL_INCLUDE_DIRS}
     ${CVD_INCLUDE_DIRS}
@@ -19,35 +19,35 @@ include_directories(
     )
 
 set(PTAM_SOURCES
-    Src/ARDriver.cc
-    Src/ATANCamera.cc
-    Src/Bundle.cc
-    Src/EyeGame.cc
-    Src/GLWindow2.cc
-    Src/GLWindowMenu.cc
-    Src/HomographyInit.cc
-    Src/KeyFrame.cc
-    Src/Map.cc
-    Src/MapMaker.cc
-    Src/MapPoint.cc
-    Src/MapViewer.cc
-    Src/MiniPatch.cc
-    Src/PatchFinder.cc
-    Src/Relocaliser.cc
-    Src/ShiTomasi.cc
-    Src/SmallBlurryImage.cc
-    Src/System.cc
-    Src/Tracker.cc
-    Src/VideoSource.cc
+    src/ARDriver.cc
+    src/ATANCamera.cc
+    src/Bundle.cc
+    src/EyeGame.cc
+    src/GLWindow2.cc
+    src/GLWindowMenu.cc
+    src/HomographyInit.cc
+    src/KeyFrame.cc
+    src/Map.cc
+    src/MapMaker.cc
+    src/MapPoint.cc
+    src/MapViewer.cc
+    src/MiniPatch.cc
+    src/PatchFinder.cc
+    src/Relocaliser.cc
+    src/ShiTomasi.cc
+    src/SmallBlurryImage.cc
+    src/System.cc
+    src/Tracker.cc
+    src/VideoSource.cc
     )
 
 set(CALIB_SOURCES
-    Src/ATANCamera.cc
-    Src/CalibCornerPatch.cc
-    Src/CalibImage.cc
-    Src/GLWindow2.cc
-    Src/GLWindowMenu.cc
-    Src/VideoSource.cc
+    src/ATANCamera.cc
+    src/CalibCornerPatch.cc
+    src/CalibImage.cc
+    src/GLWindow2.cc
+    src/GLWindowMenu.cc
+    src/VideoSource.cc
     )
 
 set(LIBS
@@ -59,14 +59,14 @@ set(LIBS
     )
 
 add_executable(CameraCalibrator
-    Src/CameraCalibrator.cc
+    src/CameraCalibrator.cc
     ${CALIB_SOURCES}
     )
 
 target_link_libraries(CameraCalibrator ${LIBS})
 
 add_executable(PTAM
-    Src/main.cc
+    src/main.cc
     ${PTAM_SOURCES}
     )
 
