@@ -1,15 +1,15 @@
-#include "VideoSource.h"
+#include "VideoOpenCVSource.h"
 
-VideoSource::VideoSource()
-: mirSize(VIDEO_WIDTH, VIDEO_HEIGHT)
+VideoOpenCVSource::VideoOpenCVSource()
+: mirSize()
 , capture(0) {
     if (!capture.isOpened())
         std::cerr << "Failed to open video capture!" << std::endl;
 };
 
-VideoSource::~VideoSource() {}
+VideoOpenCVSource::~VideoOpenCVSource() {}
 
-void VideoSource::GetAndFillFrameBWandRGB(
+void VideoOpenCVSource::GetAndFillFrameBWandRGB(
   CVD::Image<CVD::byte> &imBW
 , CVD::Image<CVD::Rgb<CVD::byte> > &imRGB
 ) {
@@ -17,7 +17,8 @@ void VideoSource::GetAndFillFrameBWandRGB(
 
     // fetch camera frame and resize
     capture.read(rgbFrame);
-    cv::resize(rgbFrame, rgbFrame, cv::Size(VIDEO_WIDTH, VIDEO_HEIGHT));
+    mirSize = CVD::ImageRef(rgbFrame.cols, rgbFrame.rows);
+    //cv::resize(rgbFrame, rgbFrame, cv::Size(VIDEO_WIDTH, VIDEO_HEIGHT));
 
     // extract rgb frame and store to rgb image parameter
     cv::cvtColor(rgbFrame, rgbFrame, CV_BGR2RGB);
@@ -36,6 +37,6 @@ void VideoSource::GetAndFillFrameBWandRGB(
     imBW.copy_from(cvdGrayFrame);
 };
 
-CVD::ImageRef VideoSource::Size() {
+CVD::ImageRef VideoOpenCVSource::Size() {
     return mirSize;
 }

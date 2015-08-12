@@ -12,31 +12,22 @@
 // a new frame and then overwrite the passed-as-reference images with
 // GreyScale and Colour versions of the new frame.
 //
-#include <iostream>
 
 #include <cvd/image.h>
 #include <cvd/byte.h>
 #include <cvd/rgb.h>
 #include <cvd/utility.h>
 
-#include <opencv2/opencv.hpp>
-
-#define VIDEO_WIDTH 640
-#define VIDEO_HEIGHT 480
-
-struct VideoSourceData;
-
 class VideoSource {
 public:
     VideoSource();
     ~VideoSource();
-    void GetAndFillFrameBWandRGB(
+    virtual void GetAndFillFrameBWandRGB(
         CVD::Image<CVD::byte>& imBW, CVD::Image<CVD::Rgb<CVD::byte> >& imRGB
-        );
+        ) = 0;
     CVD::ImageRef Size();
 
-private:
+protected:
     void *mptr;
     CVD::ImageRef mirSize;
-    cv::VideoCapture capture;
 };

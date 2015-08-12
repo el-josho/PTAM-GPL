@@ -4,7 +4,7 @@
 #ifndef __CAMERACALIBRATOR_H
 #define __CAMERACALIBRATOR_H
 #include "CalibImage.h"
-#include "VideoSource.h"
+#include "VideoOpenCVSource.h"
 #include <gvars3/gvars3.h>
 #include <vector>
 #include "GLWindow2.h"
@@ -20,7 +20,7 @@ protected:
   void HandleFrame(CVD::Image<CVD::byte> imFrame);
   static void MainLoopCallback(void* pvUserData);
   void MainLoopStep();
-  VideoSource mVideoSource;
+  VideoOpenCVSource mVideoSource;
   
   GLWindow2 mGLWindow;
   ATANCamera mCamera;

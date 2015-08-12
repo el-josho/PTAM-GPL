@@ -10,7 +10,7 @@
 //
 #ifndef __SYSTEM_H
 #define __SYSTEM_H
-#include "VideoSource.h"
+#include "VideoOpenCVSource.h"
 #include "GLWindow2.h"
 
 #include <cvd/image.h>
@@ -31,7 +31,7 @@ public:
   void Run();
   
 private:
-  VideoSource mVideoSource;
+  VideoOpenCVSource mVideoSource;
   GLWindow2 mGLWindow;
   CVD::Image<CVD::Rgb<CVD::byte> > mimFrameRGB;
   CVD::Image<CVD::byte> mimFrameBW;

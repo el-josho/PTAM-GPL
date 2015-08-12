@@ -38,7 +38,7 @@ set(PTAM_SOURCES
     src/SmallBlurryImage.cc
     src/System.cc
     src/Tracker.cc
-    src/VideoSource.cc
+    src/VideoOpenCVSource.cc
     )
 
 set(CALIB_SOURCES
@@ -47,7 +47,7 @@ set(CALIB_SOURCES
     src/CalibImage.cc
     src/GLWindow2.cc
     src/GLWindowMenu.cc
-    src/VideoSource.cc
+    src/VideoOpenCVSource.cc
     )
 
 set(LIBS
