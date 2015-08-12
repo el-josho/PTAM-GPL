@@ -1,5 +1,5 @@
 // Copyright 2008 Isis Innovation Limited
-#include "ShiTomasi.h"
+#include <ShiTomasi.h>
 #include <math.h>
 
 using namespace CVD;

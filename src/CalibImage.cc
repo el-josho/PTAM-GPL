@@ -1,6 +1,6 @@
 // Copyright 2008 Isis Innovation Limited
-#include "OpenGL.h"
-#include "CalibImage.h"
+#include <OpenGL.h>
+#include <CalibImage.h>
 #include <stdlib.h>
 #include <gvars3/instances.h>
 #include <cvd/utility.h>

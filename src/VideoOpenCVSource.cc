@@ -1,4 +1,4 @@
-#include "VideoOpenCVSource.h"
+#include <VideoOpenCVSource.h>
 
 VideoOpenCVSource::VideoOpenCVSource() : mirSize(), capture(0) {
   if (!capture.isOpened())

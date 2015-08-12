@@ -1,6 +1,6 @@
-#include "OpenGL.h"
-#include "GLWindow2.h"
-#include "GLWindowMenu.h"
+#include <OpenGL.h>
+#include <GLWindow2.h>
+#include <GLWindowMenu.h>
 #include <stdlib.h>
 #include <gvars3/GStringUtil.h>
 #include <gvars3/instances.h>

@@ -1,6 +1,6 @@
 // Copyright 2008 Isis Innovation Limited
-#include "CalibCornerPatch.h"
-#include "OpenGL.h"
+#include <CalibCornerPatch.h>
+#include <OpenGL.h>
 #include <TooN/helpers.h>
 #include <cvd/vector_image_ref.h>
 #include <cvd/vision.h>

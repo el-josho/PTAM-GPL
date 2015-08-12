@@ -22,7 +22,7 @@
 // then calls Compute() to do bundle adjustment;
 // then reads results back to update the map.
 
-#include "ATANCamera.h"
+#include <ATANCamera.h>
 #include <TooN/TooN.h>
 using namespace TooN;
 #include <TooN/se3.h>

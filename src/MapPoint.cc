@@ -1,6 +1,7 @@
 // Copyright 2008 Isis Innovation Limited
-#include "MapPoint.h"
-#include "KeyFrame.h"
+#include <MapPoint.h>
+#include <KeyFrame.h>
+
 void MapPoint::RefreshPixelVectors() {
   KeyFrame& k = *pPatchSourceKF;
 

@@ -1,7 +1,7 @@
 // Copyright 2008 Isis Innovation Limited
-#include "PatchFinder.h"
-#include "SmallMatrixOpts.h"
-#include "KeyFrame.h"
+#include <PatchFinder.h>
+#include <SmallMatrixOpts.h>
+#include <KeyFrame.h>
 
 #include <cvd/vision.h>
 #include <cvd/vector_image_ref.h>

@@ -11,7 +11,7 @@
 #define __EYEGAME_H
 #include <TooN/TooN.h>
 using namespace TooN;
-#include "OpenGL.h"
+#include <OpenGL.h>
 
 class EyeGame {
  public:

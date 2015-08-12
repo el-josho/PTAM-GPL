@@ -1,10 +1,10 @@
 // Copyright 2008 Isis Innovation Limited
-#include "MapMaker.h"
-#include "MapPoint.h"
-#include "Bundle.h"
-#include "PatchFinder.h"
-#include "SmallMatrixOpts.h"
-#include "HomographyInit.h"
+#include <MapMaker.h>
+#include <MapPoint.h>
+#include <Bundle.h>
+#include <PatchFinder.h>
+#include <SmallMatrixOpts.h>
+#include <HomographyInit.h>
 
 #include <cvd/vector_image_ref.h>
 #include <cvd/vision.h>

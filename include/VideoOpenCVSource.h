@@ -8,7 +8,7 @@
 
 #include <opencv2/opencv.hpp>
 
-#include "VideoSource.h"
+#include <VideoSource.h>
 
 class VideoOpenCVSource {
  public:

@@ -1,6 +1,6 @@
 // Copyright 2008 Isis Innovation Limited
-#include "EyeGame.h"
-#include "OpenGL.h"
+#include <EyeGame.h>
+#include <OpenGL.h>
 #include <cvd/convolution.h>
 
 using namespace CVD;

@@ -11,10 +11,10 @@
 #ifndef __RELOCALISER_H
 #define __RELOCALISER_H
 #include <TooN/se2.h>
-#include "ATANCamera.h"
-#include "SmallBlurryImage.h"
+#include <ATANCamera.h>
+#include <SmallBlurryImage.h>
 
-#include "Map.h"
+#include <Map.h>
 
 class Relocaliser {
  public:

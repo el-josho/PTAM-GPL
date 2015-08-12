@@ -21,10 +21,10 @@
 #ifndef __TRACKER_H
 #define __TRACKER_H
 
-#include "MapMaker.h"
-#include "ATANCamera.h"
-#include "MiniPatch.h"
-#include "Relocaliser.h"
+#include <MapMaker.h>
+#include <ATANCamera.h>
+#include <MiniPatch.h>
+#include <Relocaliser.h>
 
 #include <sstream>
 #include <vector>

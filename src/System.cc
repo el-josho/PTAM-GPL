@@ -1,13 +1,13 @@
 // Copyright 2008 Isis Innovation Limited
-#include "System.h"
-#include "OpenGL.h"
+#include <System.h>
+#include <OpenGL.h>
 #include <gvars3/instances.h>
 #include <stdlib.h>
-#include "ATANCamera.h"
-#include "MapMaker.h"
-#include "Tracker.h"
-#include "ARDriver.h"
-#include "MapViewer.h"
+#include <ATANCamera.h>
+#include <MapMaker.h>
+#include <Tracker.h>
+#include <ARDriver.h>
+#include <MapViewer.h>
 
 using namespace CVD;
 using namespace std;

@@ -1,5 +1,5 @@
 // Copyright 2008 Isis Innovation Limited
-#include "ATANCamera.h"
+#include <ATANCamera.h>
 #include <TooN/helpers.h>
 #include <cvd/vector_image_ref.h>
 #include <iostream>

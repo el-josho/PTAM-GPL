@@ -11,12 +11,12 @@
 #ifndef __MAP_VIEWER_H
 #define __MAP_VIEWER_H
 
-#include "Map.h"
+#include <Map.h>
 #include <TooN/TooN.h>
 using namespace TooN;
 #include <TooN/se3.h>
 #include <sstream>
-#include "GLWindow2.h"
+#include <GLWindow2.h>
 
 class Map;
 

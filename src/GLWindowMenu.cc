@@ -1,6 +1,6 @@
 // Copyright 2008 Isis Innovation Limited
-#include "OpenGL.h"
-#include "GLWindowMenu.h"
+#include <OpenGL.h>
+#include <GLWindowMenu.h>
 #include <gvars3/instances.h>
 #include <gvars3/GStringUtil.h>
 #include <sstream>

@@ -11,9 +11,9 @@
 #ifndef __AR_Driver_H
 #define __AR_Driver_H
 #include <TooN/se3.h>
-#include "ATANCamera.h"
-#include "GLWindow2.h"
-#include "OpenGL.h"
+#include <ATANCamera.h>
+#include <GLWindow2.h>
+#include <OpenGL.h>
 #include <cvd/image.h>
 #include <cvd/rgb.h>
 #include <cvd/byte.h>
