@@ -4,14 +4,17 @@
 DIR="$( cd "$( dirname "$0" )" && pwd )"
 cd $DIR/..
 
-# run initial cmake if neccessary
-if [ ! -d "build" ]; then
+# no build directory, create it
+if [[ ! -d "build" ]]; then
     mkdir build
-    cd build
-    cmake ..
-    cd ..
+fi
+
+cd build
+
+# build directory is empty, run cmake
+if [[ "$(ls -A . 2> /dev/null)" == "" ]]; then
+  cmake ..
 fi
 
 # build it
-cd build
 make -j4
