@@ -14,4 +14,4 @@ fi
 
 # build it
 cd build
-make
+make -j4
