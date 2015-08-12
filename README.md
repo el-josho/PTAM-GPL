@@ -13,6 +13,21 @@ Vision Laboratory of the University of Oxford, as described in the following pap
 - Georg Klein and David Murray, "Parallel Tracking and Mapping for Small AR Workspaces", Proc. ISMAR 2007
 - Georg Klein and David Murray, "Improving the Agility of Keyframe-based SLAM", Proc. ECCV 2008
 
+Requirements
+------------
+
+- [GVars3](http://www.edwardrosten.com/cvd/gvars3.html)
+- OpenGL
+- [CVD](http://www.edwardrosten.com/cvd/)
+- [TooN](http://www.edwardrosten.com/cvd/toon/html-user/)
+
+Building
+--------
+Use the included script `./utils/make.sh` or follow these steps:
+- create a build-directory and change to it: `mkdir build && cd build`
+- run cmake: `cmake ..`
+- build: `make`
+
 
 Previous PTAM release
 ---------------------
@@ -23,11 +38,3 @@ agreement with Isis Innovation. That version remains available here:
 http://www.robots.ox.ac.uk/~gk/PTAM/
 
 This code represents a re-licensed fork of Isis Innovation's PTAM Source Code Release v1.0-r114.
-
-
-Bug fixing, new features, and branches
---------------------------------------
-
-If you have a version of PTAM with changes that you would like to merge into this master version, please send a pull or patch request.
-
-Requests will be placed in their own branch for review and testing. Therefore, branches may or may not work. Branches will eventually be merged into the master once we have had time to review and test.
