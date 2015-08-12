@@ -5,7 +5,7 @@
 //
 // Defines the MapViewer class
 //
-// This defines a simple map viewer widget, which can draw the 
+// This defines a simple map viewer widget, which can draw the
 // current map and the camera/keyframe poses within it.
 //
 #ifndef __MAP_VIEWER_H
@@ -20,23 +20,22 @@ using namespace TooN;
 
 class Map;
 
-class MapViewer
-{
-public:
-  MapViewer(Map &map, GLWindow2 &glw);
+class MapViewer {
+ public:
+  MapViewer(Map& map, GLWindow2& glw);
   void DrawMap(SE3<> se3CamFromWorld);
   std::string GetMessageForUser();
-  
-protected:
-  Map &mMap;
-  GLWindow2 &mGLWindow;
-  
+
+ protected:
+  Map& mMap;
+  GLWindow2& mGLWindow;
+
   void DrawGrid();
   void DrawMapDots();
-  void DrawCamera(SE3<> se3, bool bSmall=false);
+  void DrawCamera(SE3<> se3, bool bSmall = false);
   void SetupFrustum();
   void SetupModelView(SE3<> se3WorldFromCurrent = SE3<>());
-  
+
   Vector<3> mv3MassCenter;
   SE3<> mse3ViewerFromWorld;
 

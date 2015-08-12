@@ -19,15 +19,15 @@
 #include <cvd/utility.h>
 
 class VideoSource {
-public:
-    VideoSource();
-    ~VideoSource();
-    virtual void GetAndFillFrameBWandRGB(
-        CVD::Image<CVD::byte>& imBW, CVD::Image<CVD::Rgb<CVD::byte> >& imRGB
-        ) = 0;
-    CVD::ImageRef Size();
+ public:
+  VideoSource();
+  ~VideoSource();
+  virtual void GetAndFillFrameBWandRGB(
+      CVD::Image<CVD::byte>& imBW,
+      CVD::Image<CVD::Rgb<CVD::byte> >& imRGB) = 0;
+  CVD::ImageRef Size();
 
-protected:
-    void *mptr;
-    CVD::ImageRef mirSize;
+ protected:
+  void* mptr;
+  CVD::ImageRef mirSize;
 };

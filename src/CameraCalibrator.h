@@ -9,26 +9,25 @@
 #include <vector>
 #include "GLWindow2.h"
 
-class CameraCalibrator
-{
-public:
+class CameraCalibrator {
+ public:
   CameraCalibrator();
   void Run();
-  
-protected:
+
+ protected:
   void Reset();
   void HandleFrame(CVD::Image<CVD::byte> imFrame);
   static void MainLoopCallback(void* pvUserData);
   void MainLoopStep();
   VideoOpenCVSource mVideoSource;
-  
+
   GLWindow2 mGLWindow;
   ATANCamera mCamera;
   bool mbDone;
 
   std::vector<CalibImage> mvCalibImgs;
   void OptimizeOneStep();
-  
+
   bool mbGrabNextFrame;
   GVars3::gvar3<int> mgvnOptimizing;
   GVars3::gvar3<int> mgvnShowImage;
@@ -36,7 +35,9 @@ protected:
   double mdMeanPixelError;
 
   void GUICommandHandler(std::string sCommand, std::string sParams);
-  static void GUICommandCallBack(void* ptr, std::string sCommand, std::string sParams);
+  static void GUICommandCallBack(void* ptr,
+                                 std::string sCommand,
+                                 std::string sParams);
 };
 
 #endif

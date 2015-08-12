@@ -22,27 +22,27 @@
 using namespace std;
 using namespace CVD;
 
-class ARDriver
-{
+class ARDriver {
  public:
-  ARDriver(const ATANCamera &cam, ImageRef irFrameSize, GLWindow2 &glw);
-  void Render(Image<Rgb<byte> > &imFrame, SE3<> se3CamFromWorld);
+  ARDriver(const ATANCamera& cam, ImageRef irFrameSize, GLWindow2& glw);
+  void Render(Image<Rgb<byte> >& imFrame, SE3<> se3CamFromWorld);
   void Reset();
   void Init();
+
  protected:
   ATANCamera mCamera;
-  GLWindow2 &mGLWindow;
+  GLWindow2& mGLWindow;
   void DrawFadingGrid();
   void MakeFrameBuffer();
   void DrawFBBackGround();
   void DrawDistortedFB();
   void SetFrustum();
-  
+
   // Texture stuff:
   GLuint mnFrameBuffer;
   GLuint mnFrameBufferTex;
   GLuint mnFrameTex;
-  
+
   int mnCounter;
   ImageRef mirFBSize;
   ImageRef mirFrameSize;

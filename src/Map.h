@@ -9,7 +9,7 @@
 // everything is stored as lists of pointers,
 // and map points are not erased if they are bad:
 // they are moved to the trash list. That way
-// old pointers which other threads are using are not 
+// old pointers which other threads are using are not
 // invalidated!
 
 #ifndef __MAP_H
@@ -21,15 +21,14 @@
 struct MapPoint;
 struct KeyFrame;
 
-struct Map
-{
+struct Map {
   Map();
-  inline bool IsGood() {return bGood;}
+  inline bool IsGood() { return bGood; }
   void Reset();
-  
+
   void MoveBadPointsToTrash();
   void EmptyTrash();
-  
+
   std::vector<MapPoint*> vpPoints;
   std::vector<MapPoint*> vpPointsTrash;
   std::vector<KeyFrame*> vpKeyFrames;
@@ -37,8 +36,4 @@ struct Map
   bool bGood;
 };
 
-
-
-
 #endif
-
