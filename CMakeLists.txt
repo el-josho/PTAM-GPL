@@ -3,7 +3,6 @@ cmake_minimum_required(VERSION 2.8)
 project(PTAM-SLAM)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake" ${CMAKE_MODULE_PATH})
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/bin")
 
 find_package(GVars3 REQUIRED)
 find_package(OpenGL REQUIRED)
@@ -72,3 +71,8 @@ add_executable(PTAM
     )
 
 target_link_libraries(PTAM ${LIBS})
+
+install(
+    TARGETS CameraCalibrator PTAM
+    DESTINATION "${CMAKE_SOURCE_DIR}/bin"
+    )

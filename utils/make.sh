@@ -17,4 +17,4 @@ if [[ ! -f "Makefile" ]]; then
 fi
 
 # build it
-make -j4
+make -j4 install
