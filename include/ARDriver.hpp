@@ -11,13 +11,13 @@
 #ifndef __AR_Driver_H
 #define __AR_Driver_H
 #include <TooN/se3.h>
-#include <ATANCamera.h>
-#include <GLWindow2.h>
-#include <OpenGL.h>
+#include <ATANCamera.hpp>
+#include <GLWindow2.hpp>
+#include <OpenGL.hpp>
 #include <cvd/image.h>
 #include <cvd/rgb.h>
 #include <cvd/byte.h>
-#include "EyeGame.h"
+#include <EyeGame.hpp>
 
 using namespace std;
 using namespace CVD;

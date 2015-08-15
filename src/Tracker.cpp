@@ -1,11 +1,11 @@
 // Copyright 2008 Isis Innovation Limited
-#include <OpenGL.h>
-#include <Tracker.h>
-#include <MEstimator.h>
-#include <ShiTomasi.h>
-#include <SmallMatrixOpts.h>
-#include <PatchFinder.h>
-#include <TrackerData.h>
+#include <OpenGL.hpp>
+#include <Tracker.hpp>
+#include <MEstimator.hpp>
+#include <ShiTomasi.hpp>
+#include <SmallMatrixOpts.hpp>
+#include <PatchFinder.hpp>
+#include <TrackerData.hpp>
 
 #include <cvd/utility.h>
 #include <cvd/gl_helpers.h>

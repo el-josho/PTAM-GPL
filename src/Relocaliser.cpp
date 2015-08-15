@@ -1,6 +1,6 @@
 // Copyright 2008 Isis Innovation Limited
-#include <Relocaliser.h>
-#include <SmallBlurryImage.h>
+#include <Relocaliser.hpp>
+#include <SmallBlurryImage.hpp>
 #include <cvd/utility.h>
 #include <gvars3/instances.h>
 

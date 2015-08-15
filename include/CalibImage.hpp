@@ -3,8 +3,8 @@
 
 #ifndef __CALIB_IMAGE_H
 #define __CALIB_IMAGE_H
-#include <ATANCamera.h>
-#include <CalibCornerPatch.h>
+#include <ATANCamera.hpp>
+#include <CalibCornerPatch.hpp>
 #include <vector>
 #include <TooN/se3.h>
 

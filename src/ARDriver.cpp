@@ -1,6 +1,6 @@
 // Copyright 2008 Isis Innovation Limited
 #define GL_GLEXT_PROTOTYPES 1
-#include <ARDriver.h>
+#include <ARDriver.hpp>
 
 using namespace GVars3;
 using namespace CVD;

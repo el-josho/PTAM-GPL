@@ -1,5 +1,5 @@
 // Copyright 2008 Isis Innovation Limited
-#include <SmallBlurryImage.h>
+#include <SmallBlurryImage.hpp>
 #include <cvd/utility.h>
 #include <cvd/convolution.h>
 #include <cvd/vision.h>

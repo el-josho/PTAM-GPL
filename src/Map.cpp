@@ -1,6 +1,6 @@
 // Copyright 2008 Isis Innovation Limited
-#include <Map.h>
-#include <MapPoint.h>
+#include <Map.hpp>
+#include <MapPoint.hpp>
 
 Map::Map() {
   Reset();

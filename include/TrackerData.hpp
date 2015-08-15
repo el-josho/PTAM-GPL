@@ -3,8 +3,8 @@
 #ifndef __TRACKERDATA_H
 #define __TRACKERDATA_H
 
-#include <PatchFinder.h>
-#include <ATANCamera.h>
+#include <PatchFinder.hpp>
+#include <ATANCamera.hpp>
 
 // This class contains all the intermediate results associated with
 // a map-point that the tracker keeps up-to-date. TrackerData

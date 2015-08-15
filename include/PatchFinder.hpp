@@ -43,8 +43,8 @@ using namespace TooN;
 #include <TooN/se3.h>
 #include <cvd/image.h>
 #include <cvd/byte.h>
-#include <MapPoint.h>
-#include <LevelHelpers.h>
+#include <MapPoint.hpp>
+#include <LevelHelpers.hpp>
 
 class PatchFinder {
  public:

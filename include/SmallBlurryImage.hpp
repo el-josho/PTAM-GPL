@@ -10,8 +10,8 @@
 #include <cvd/byte.h>
 #include <TooN/se2.h>
 #include <TooN/se3.h>
-#include <KeyFrame.h>
-#include <ATANCamera.h>
+#include <KeyFrame.hpp>
+#include <ATANCamera.hpp>
 
 class SmallBlurryImage {
  public:

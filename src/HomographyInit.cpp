@@ -1,12 +1,12 @@
 // Copyright 2008 Isis Innovation Limited
-#include <HomographyInit.h>
-#include <SmallMatrixOpts.h>
+#include <HomographyInit.hpp>
+#include <SmallMatrixOpts.hpp>
 #include <utility>
 #include <TooN/se3.h>
 #include <TooN/SVD.h>
 #include <TooN/SymEigen.h>
 #include <TooN/wls.h>
-#include <MEstimator.h>
+#include <MEstimator.hpp>
 
 using namespace std;
 bool HomographyInit::IsHomographyInlier(Matrix<3> m3Homography,

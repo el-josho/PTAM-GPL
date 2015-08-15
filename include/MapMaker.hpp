@@ -17,9 +17,9 @@
 #include <cvd/byte.h>
 #include <cvd/thread.h>
 
-#include <Map.h>
-#include <KeyFrame.h>
-#include <ATANCamera.h>
+#include <Map.hpp>
+#include <KeyFrame.hpp>
+#include <ATANCamera.hpp>
 #include <queue>
 
 // Each MapPoint has an associated MapMakerData class

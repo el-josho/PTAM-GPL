@@ -1,6 +1,6 @@
 // Copyright 2008 Isis Innovation Limited
-#include <CalibCornerPatch.h>
-#include <OpenGL.h>
+#include <CalibCornerPatch.hpp>
+#include <OpenGL.hpp>
 #include <TooN/helpers.h>
 #include <cvd/vector_image_ref.h>
 #include <cvd/vision.h>
@@ -8,7 +8,7 @@
 #include <cvd/convolution.h>
 #include <cvd/image_interpolate.h>
 #include <TooN/Cholesky.h>
-#include "SmallMatrixOpts.h"
+#include <SmallMatrixOpts.hpp>
 
 using namespace std;
 using namespace CVD;

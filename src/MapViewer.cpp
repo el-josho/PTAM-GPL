@@ -1,7 +1,7 @@
-#include <MapViewer.h>
-#include <MapPoint.h>
-#include <KeyFrame.h>
-#include <LevelHelpers.h>
+#include <MapViewer.hpp>
+#include <MapPoint.hpp>
+#include <KeyFrame.hpp>
+#include <LevelHelpers.hpp>
 #include <iomanip>
 
 #include <cvd/gl_helpers.h>

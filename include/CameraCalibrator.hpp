@@ -3,11 +3,11 @@
 
 #ifndef __CAMERACALIBRATOR_H
 #define __CAMERACALIBRATOR_H
-#include <CalibImage.h>
-#include <VideoOpenCVSource.h>
+#include <CalibImage.hpp>
+#include <VideoOpenCVSource.hpp>
 #include <gvars3/gvars3.h>
 #include <vector>
-#include <GLWindow2.h>
+#include <GLWindow2.hpp>
 
 class CameraCalibrator {
  public:

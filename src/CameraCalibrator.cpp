@@ -1,7 +1,7 @@
 // Copyright 2008 Isis Innovation Limited
-#include <OpenGL.h>
+#include <OpenGL.hpp>
 #include <gvars3/instances.h>
-#include <CameraCalibrator.h>
+#include <CameraCalibrator.hpp>
 #include <TooN/SVD.h>
 #include <fstream>
 #include <stdlib.h>

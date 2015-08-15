@@ -10,8 +10,8 @@
 //
 #ifndef __SYSTEM_H
 #define __SYSTEM_H
-#include <VideoOpenCVSource.h>
-#include <GLWindow2.h>
+#include <VideoOpenCVSource.hpp>
+#include <GLWindow2.hpp>
 
 #include <cvd/image.h>
 #include <cvd/rgb.h>

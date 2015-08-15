@@ -1,6 +1,6 @@
 // Copyright 2008 Isis Innovation Limited
-#include <Bundle.h>
-#include <MEstimator.h>
+#include <Bundle.hpp>
+#include <MEstimator.hpp>
 #include <TooN/helpers.h>
 #include <TooN/Cholesky.h>
 #include <fstream>
