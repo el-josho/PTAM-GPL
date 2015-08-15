@@ -58,6 +58,22 @@
 # sftp configuration file
 sftp-config.json
 
+### https://raw.github.com/github/gitignore/573fd7e4d914daa07b846cdc4323bd4813c9f204/ArchLinuxPackages.gitignore
+
+*.tar
+*.tar.*
+*.jar
+*.exe
+*.msi
+*.zip
+*.tgz
+*.log
+*.log.*
+*.sig
+
+pkg/
+src/
+
 
 # own stuff
 build
