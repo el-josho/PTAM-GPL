@@ -1,0 +1,33 @@
+#
+pkgname=gvars3
+pkgver=3.0
+pkgrel=3
+pkgdesc="Gvars3 - configuration system library <br /> GVars3 is also hosted as a subsidiary project of libCVD."
+arch=('x86_64' 'i686')
+url=("http://www.edwardrosten.com/cvd/gvars3.html")
+license=('lGPLv2.1')
+depends=('toon')
+optdepends=()
+makedepends=('gcc>=4.3.0' 'make')
+conflicts=()
+replaces=()
+backup=()
+source=("http://www.edwardrosten.com/cvd/gvars-${pkgver}.tar.gz"
+		'fltkremoval.patch')
+md5sums=('2dd2cb38b874c211a5041c627a68a79d'
+         'c2ee8eaa8ed8a96c991528cfa3ab1c39')
+
+
+build() {
+  cd "${srcdir}/gvars-${pkgver}"
+  patch -p1 -i $srcdir/fltkremoval.patch
+  ./configure --prefix=/usr
+  make
+}
+ 
+package() {
+  cd "${srcdir}/gvars-${pkgver}"
+  mkdir -p "${pkgdir}/usr/lib/pkgconfig"
+  make DESTDIR="${pkgdir}" pkgconfig="${pkgdir}/usr/lib/pkgconfig" install
+  #install -Dm644 COPYING "$pkgdir/usr/share/licenses/$pkgname/COPYING"
+}
