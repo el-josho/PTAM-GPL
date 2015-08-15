@@ -11,8 +11,8 @@ fi
 
 cd build
 
-# build directory is empty, run cmake
-if [[ "$(ls -A . 2> /dev/null)" == "" ]]; then
+# no makefile in build dir, run cmake
+if [[ ! -f "Makefile" ]]; then
   cmake ..
 fi
 
