@@ -3,6 +3,11 @@
 VideoOpenCVSource::VideoOpenCVSource() : mirSize(), capture(0) {
   if (!capture.isOpened())
     std::cerr << "Failed to open video capture!" << std::endl;
+
+  // get one frame to determine image size
+  cv::Mat initialFrame;
+  capture.read(initialFrame);
+  mirSize = CVD::ImageRef(initialFrame.cols, initialFrame.rows);
 };
 
 VideoOpenCVSource::~VideoOpenCVSource() {
